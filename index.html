@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="min-width: 1850px; overflow-x: hidden;">
     
     <div class="upper_content" style="display: block; text-align: center;">
         <span style="position: relative; right: 550px;"><img src="odin.jpg" style="height: 40px; width: 30px; right: 60px;"></span>
@@ -29,6 +29,8 @@
             <a href="https://www.theodinproject.com/sign_up" style="color: white; text-decoration: none;"> Get Started </a>
         </button>
     </span>
+
+    </div>
 
     <div class="second_content" style="display: block; text-align: center;">
 
@@ -53,19 +55,103 @@
 
         <br>
 
-        <img src="big_main_photo.jpg" style="width: 1850px;">
+        <img src="big_main_photo.jpg" style="width: 1890px;">
 
         <br>
   
-        <h2 style="color: #1f2937; font-family: Arial, Helvetica, sans-serif; top: -100px;">How it works</h2>
+        <h2 style="color: #1f2937; font-family: Arial, Helvetica, sans-serif; top: -100px; text-align: center;">How it works</h2>
 
         <br>
 
-        <p style="color: #4b5563; font: 18px; height: 84px; width: 768px; margin: 0 auto;">
+        <p style="color: #4b5563; font: 18px; height: 84px; width: 768px; margin: 0 auto; text-align: center;">
             This is the website we wish we had when we were learning on our own. We scour the <br>internet looking for only the best resources to supplement your learning and present them <br>in a logical order.
         </p>
 
+        <br>
 
+        <div class="stages" style="position: absolute;">
+                <span>
+            <img src="book.jpg" style="height: 160px; width: 107px; left: 555px; position: relative;">
+                </span>
+            <h3 style="color: #4b5563; position: relative; left: 455px; height: 28px; width: 302px; font-family: Arial, Helvetica, sans-serif; text-align: center;">Learn</h3>
+            <p style="color: #4b5563; font-family: Arial, Helvetica, sans-serif; height: 72px; width: 302px; position: relative; top: 0px; left: 455px; text-align: center;">Learn from a curriculum with the best <br>curated online tutorials, blogs, and <br>courses.</p>        
+        </div>
+
+            <img src="laptop.jpg" style="height: 160px; width: 207px; position: relative; left: 845px;">
+        <br>
+            <h3 style="color: #4b5563; left: 795px; height: 28px; width: 302px; font-family: Arial, Helvetica, sans-serif; text-align: center; position: relative;">Build</h3>
+            <p style="color: #4b5563; font-family: Arial, Helvetica, sans-serif; height: 96px; width: 303; text-align: center; text-align: center; position: relative;">Build dozens of portfolio-worthy <br>projects along the way, from simple <br>scripts to full programs and deployed <br>websites.</p>
+
+            <img src="community.jpg" style="height: 160px; width: 175px; position: relative; left: 1235px; top: -344px;">
+        <br>
+            <h3 style="color: #4b5563; font-family: Arial, Helvetica, sans-serif; width: 301px; height: 28px; position: relative;  text-align: center; left: 1170px; top: -345px;">Connect</h3>
+            <p style="color: #4b5563; font-family: Arial, Helvetica, sans-serif; text-align: center; position: relative; left: 380px; top: -340px;">You're not alone. Learn and get help <br> from our friendly community of <br> beginner and experienced developers.</p>
+    
+<!----><!----><!----><!----><!----><!----><!----><!---->
+            <div class="scroll-container">
+                <div class="scroll-content">
+                </div>
+              </div>
+<style>
+    .scroll-container {
+    position: relative;
+}
+
+.scroll-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.scroll-content.is-dragging {
+  cursor: move;
+}
+
+.scroll-content.is-dragging {
+  user-select: none;
+  pointer-events: none;
+}
+</style>
+
+<script>
+    const scrollContainer = document.querySelector('.scroll-container');
+const scrollContent = document.querySelector('.scroll-content');
+let isDragging = false;
+let startY = 0;
+let currentY = 0;
+
+scrollContent.addEventListener('mousedown', startDragging);
+scrollContent.addEventListener('touchstart', startDragging);
+
+scrollContainer.addEventListener('mousemove', drag);
+scrollContainer.addEventListener('touchmove', drag);
+
+scrollContent.addEventListener('mouseup', stopDragging);
+scrollContent.addEventListener('touchend', stopDragging);
+
+function startDragging(e) {
+  isDragging = true;
+  startY = e.clientY || e.touches[0].clientY;
+  scrollContent.classList.add('is-dragging');
+}
+
+function drag(e) {
+  if (isDragging) {
+    e.preventDefault();
+    currentY = e.clientY || e.touches[0].clientY;
+    const diff = currentY - startY;
+    scrollContent.style.transform = `translateY(${diff}px)`;
+  }
+}
+
+function stopDragging() {
+  isDragging = false;
+  scrollContent.classList.remove('is-dragging');
+}
+
+</script>
+<!----><!----><!----><!----><!----><!----><!----><!---->
 
     <!--
     <label>
@@ -87,10 +173,6 @@
     </div>
     
     <style>
-
-        body {
-            min-width: 350px;
-        }
 
         .head_p {
             text-align: center;

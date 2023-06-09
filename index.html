@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
 
 </head>
-<body style="min-width: 1850px; overflow-x: hidden;">
+<body style="overflow-x: hidden;">
     
     <div class="upper_content" style="display: block; text-align: center;">
         <span style="position: relative; right: 550px;"><img src="odin.jpg" style="height: 40px; width: 30px; right: 60px;"></span>
-        <span style="position: relative; right: 540px; top: -5px;"><img src="odin_text.jpg" style="width: 85px; height: 25px;"></span>
+        <span style="position: relative; right: 540px; top: -5px;"><img src="odin_text.jpg" style="object-fit: contain; width: 100px; height: 25px;"></span>
 
         <ul class="list">
             <span style="position: relative; left: 135px; top: -50px;"><li style="height: 4px; width: 55px;"><a href="https://www.theodinproject.com/paths" style="text-decoration: none; color: #727272;">All Path</a></li></span>
@@ -29,6 +29,11 @@
             <a href="https://www.theodinproject.com/sign_up" style="color: white; text-decoration: none;"> Get Started </a>
         </button>
     </span>
+
+    <input type="checkbox" id="checkbox" class="checkbox-image">
+    <label for="checkbox">
+        <img src="moon.png" style="height: 18px; width: 18px; position: relative; left: 545px; top: -95px;">
+    </label>
 
     </div>
 
@@ -90,14 +95,14 @@
             <div class="learn_content" style="font: 16px; font-family: Arial, Helvetica, sans-serif; margin: 0px 5px; padding: 80px 32px; background-color: #f5f5f5; height: 1053px; width: 1920px; top: -250px; position: relative;">
                 <h2 style="color: #1f2937; font-size: 30px; font-family: Arial, Helvetica, sans-serif; padding: 0px 0px 48px; position: relative; left: 700px;">Learn everything you need to know</h2>
             <div class="image-container">
-                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby" style="text-decoration: none;"><img class="image" src="ruby.jpg" style="height: 260px; width: 250px; position: relative; left: 530px;"></a> 
-                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/databases" style="text-decoration: none;"><img class="image" src="databases.jpg" style="height: 260px; width: 250px; position: relative; left: 550px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails" style="text-decoration: none;"><img class="image" src="r_o_r.jpg" style="height: 260px; width: 250px; position: relative; left: 570px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css" style="text-decoration: none;"><img class="image" src="interms_html_css.jpg" style="height: 260px; width: 250px; position: relative; right: 235px; top: 290px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript" style="text-decoration: none;"><img class="image" src="javascript.jpg" style="height: 260px; width: 250px; position: relative; right: 215px; top: 290px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css" style="text-decoration: none;"><img class="image" src="adv_html_css.jpg" style="height: 260px; width: 250px; position: relative; right: 195px; top: 290px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs" style="text-decoration: none;"><img class="image" src="node_js.jpg" style="height: 260px; width: 250px; position: relative; right: 865px; top: 580px;"></a>
-                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/getting-hired" style="text-decoration: none;"><img class="image" src="get_hired.jpg" style="height: 260px; width: 250px; position: relative; left: 970px; top: 317px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby" style="text-decoration: none;"><img class="image" src="ruby.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; left: 530px;"></a> 
+                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/databases" style="text-decoration: none;"><img class="image" src="databases.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; left: 550px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails" style="text-decoration: none;"><img class="image" src="r_o_r.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; left: 570px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css" style="text-decoration: none;"><img class="image" src="interms_html_css.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; right: 235px; top: 290px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript" style="text-decoration: none;"><img class="image" src="javascript.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; right: 215px; top: 290px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css" style="text-decoration: none;"><img class="image" src="adv_html_css.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; right: 195px; top: 290px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs" style="text-decoration: none;"><img class="image" src="node_js.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; right: 865px; top: 580px;"></a>
+                    <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/getting-hired" style="text-decoration: none;"><img class="image" src="get_hired.jpg" style="object-fit: cover; height: 260px; width: 250px; position: relative; left: 970px; top: 317px;"></a>
             </div>
             </div>
 
@@ -139,97 +144,27 @@
                 <a href="https://www.theodinproject.com/success_stories" style="font-size: 18px; position: relative; top: -555px; font-family: Arial, Helvetica, sans-serif; color: #4b5563;">Read more success stories</a>
               </div>
 
-              
+              <hr class="custom-hr" style="position: relative; top: -1180px;">
         <div class="credits" style="position: relative; color: #4b5563;">
-            <span style="position: relative; top: -400px; left: 345px;"><img src="odin.jpg" style="width: 30px; height: 40px;"><img src="odin_text.jpg" style="width: 85px; height: 25px;"></span>
+            <span style="position: relative; top: -1100px; left: 345px; color: #4b5563;"><img src="odin.jpg" style="object-fit: cover; width: 30px; height: 40px;"><img src="odin_text.jpg" style="object-fit: contain; position: relative; width: 100px; height: 25px; left: 10px; top: -5px;"></span>
         </div>
 
-<!----><!----><!----><!----><!----><!----><!----><!---->
-            <div class="scroll-container">
-                <div class="scroll-content">
-                </div>
-              </div>
-<style>
-    .scroll-container {
-    position: relative;
-}
-
-.scroll-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.scroll-content.is-dragging {
-  cursor: move;
-}
-
-.scroll-content.is-dragging {
-  user-select: none;
-  pointer-events: none;
-}
-</style>
-
-<script>
-    const scrollContainer = document.querySelector('.scroll-container');
-const scrollContent = document.querySelector('.scroll-content');
-let isDragging = false;
-let startY = 0;
-let currentY = 0;
-
-scrollContent.addEventListener('mousedown', startDragging);
-scrollContent.addEventListener('touchstart', startDragging);
-
-scrollContainer.addEventListener('mousemove', drag);
-scrollContainer.addEventListener('touchmove', drag);
-
-scrollContent.addEventListener('mouseup', stopDragging);
-scrollContent.addEventListener('touchend', stopDragging);
-
-function startDragging(e) {
-  isDragging = true;
-  startY = e.clientY || e.touches[0].clientY;
-  scrollContent.classList.add('is-dragging');
-}
-
-function drag(e) {
-  if (isDragging) {
-    e.preventDefault();
-    currentY = e.clientY || e.touches[0].clientY;
-    const diff = currentY - startY;
-    scrollContent.style.transform = `translateY(${diff}px)`;
-  }
-}
-
-function stopDragging() {
-  isDragging = false;
-  scrollContent.classList.remove('is-dragging');
-}
-
-</script>
-<!----><!----><!----><!----><!----><!----><!----><!---->
-
-    <!--
-    <label>
-        <input type="checkbox" onchange="changeTheme(This.checked)">
-        <img src="/moon.png" style="height: 40px; right: 40px;">
-    </label>
-
-    <script>
-        function changeTheme (isChecked) {
-            if (isChecked) {
-                document.body.setAttribute('dark', '');
-            } else {
-                document.body.removeAttribute('dark');
-            }
-        }
-    </script>
--->
-
-    </div>
-    
     <style>
+
+        .checkbox-image {
+            display: none;
+        }
+        .checkbox-image:checked + label img {
+            filter: brightness(50%);
+        }
+
+        .custom-hr {
+            width: 1920px;
+            opacity: 0.05; 
+            border: none; 
+            background-color: black; 
+            height: 700px;
+        }
 
         .image:hover {
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -349,7 +284,108 @@ function stopDragging() {
             background-color: #946720;
         }
 
+        @media screen and (min-width:1024px) and (max-width:767px) {
+            
+        }
+
     </style>
+
+<script>
+    document.querySelector('.checkbox-image').addEventListener('change', function() {
+                var image = document.querySelector('.checkbox-image + label img');
+                if (this.checked) {
+                    image.src = 'sun.png';
+                    image.alt = 'Солнце';
+                } else {
+                    image.src = 'moon.png';
+                    image.alt = 'Луна';
+                }
+            });
+</script>
+        
+            
+<!----><!----><!----><!----><!----><!----><!----><!---->
+<div class="scroll-container">
+    <div class="scroll-content">
+    </div>
+  </div>
+<style>
+.scroll-container {
+position: relative;
+}
+
+.scroll-content {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.scroll-content.is-dragging {
+cursor: move;
+}
+
+.scroll-content.is-dragging {
+user-select: none;
+pointer-events: none;
+}
+</style>
+
+<script>
+const scrollContainer = document.querySelector('.scroll-container');
+const scrollContent = document.querySelector('.scroll-content');
+let isDragging = false;
+let startY = 0;
+let currentY = 0;
+
+scrollContent.addEventListener('mousedown', startDragging);
+scrollContent.addEventListener('touchstart', startDragging);
+
+scrollContainer.addEventListener('mousemove', drag);
+scrollContainer.addEventListener('touchmove', drag);
+
+scrollContent.addEventListener('mouseup', stopDragging);
+scrollContent.addEventListener('touchend', stopDragging);
+
+function startDragging(e) {
+isDragging = true;
+startY = e.clientY || e.touches[0].clientY;
+scrollContent.classList.add('is-dragging');
+}
+
+function drag(e) {
+if (isDragging) {
+e.preventDefault();
+currentY = e.clientY || e.touches[0].clientY;
+const diff = currentY - startY;
+scrollContent.style.transform = `translateY(${diff}px)`;
+}
+}
+
+function stopDragging() {
+isDragging = false;
+scrollContent.classList.remove('is-dragging');
+}
+
+</script>
+<!----><!----><!----><!----><!----><!----><!----><!---->
+
+<!--
+<label>
+<input type="checkbox" onchange="changeTheme(This.checked)">
+<img src="/moon.png" style="height: 40px; right: 40px;">
+</label>
+
+<script>
+function changeTheme (isChecked) {
+if (isChecked) {
+    document.body.setAttribute('dark', '');
+} else {
+    document.body.removeAttribute('dark');
+}
+}
+</script>
+-->
     
 </body>
 </html>

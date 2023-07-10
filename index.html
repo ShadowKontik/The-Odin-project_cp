@@ -32,7 +32,7 @@
 
     <input type="checkbox" id="checkbox" class="checkbox-image">
     <label for="checkbox">
-        <img src="moon.png" style="height: 18px; width: 18px; position: relative; left: 545px; top: -95px;">
+        <a href="dark_main.html"><img src="moon.png" style="height: 20px; width: 20px; position: relative; left: 545px; top: -95px;"></a>
     </label>
 
     </div>
@@ -159,6 +159,16 @@
             <span style="position: relative; top: -1200px; left: 670px;"><a href="https://www.theodinproject.com/contributing" style="font-family: Arial, Helvetica, sans-serif; color: #4b5563; text-decoration: none;">Contribute</a></span>
             <span style="position: relative; top: -1200px; left: 775px;"><a href="https://www.theodinproject.com/guides/installations" style="font-family: Arial, Helvetica, sans-serif; color: #4b5563; text-decoration: none;">Installation guides</a></span>
             <span style="position: relative; top: -1200px; left: 830px;"><a href="https://www.theodinproject.com/privacy-policy" style="font-family: Arial, Helvetica, sans-serif; color: #4b5563; text-decoration: none;">Privacy</a></span>
+            
+            <span style="position: relative;  top: -1260px; left: 345px;"><p style="margin: 24px 0px 0px; font: 14px; font-family: Arial, Helvetica, sans-serif; color: #4b5563;">High quality coding education maintained by an open <br> source community.</p></span>
+            <span style="position: relative;  top: -1240px; left: 760px;"><a href="https://www.theodinproject.com/success_stories" style="text-decoration: none; color: #4b5563; font-family: Arial, Helvetica, sans-serif;">Success Stories</a></span>
+            <span style="position: relative;  top: -1240px; left: 850px;"><a href="https://www.theodinproject.com/about#contact-us" style="text-decoration: none; color: #4b5563; font-family: Arial, Helvetica, sans-serif;">Contact us</a></span>
+            <span style="position: relative;  top: -1240px; left: 150px;"><a href="https://github.com/TheOdinProjects"><img src="github.jpg"  style="height: 24px; width: 24px;"></a></span>
+            <span style="position: relative;  top: -1240px; left: 180px;"><a href="https://discord.gg/fbFCkYabZB"><img src="discord.jpg" style="height: 24px; width: 24px;" ></a></span>
+            <span style="position: relative;  top: -1240px; left: 210px;"><a href="https://www.facebook.com/theodinproject/"><img src="facebook.jpg "  style="height: 24px; width: 24px;"></a></span>
+            <span style="position: relative;  top: -1240px; left: 240px;"><a href="https://twitter.com/TheOdinProject"><img src="twitter.jpg"  style="height: 24px; width: 24px;"></a></span>
+            <hr style="border: none; border-top: 1px solid #e6e7e9; margin: 20px 0; width: 1220px; position: relative; top: -1150px; left: 345px;">
+            <span style="position: relative; top: -1140px; left: 345px;"><p style="color: #c3c7ce; font-family: Arial, Helvetica, sans-serif; font: 12px;">© 2023 The Odin Project. All rights reserved.</p></span>
         </div>
 
     <style>
@@ -302,102 +312,5 @@
 
     </style>
 
-<script>
-    document.querySelector('.checkbox-image').addEventListener('change', function() {
-                var image = document.querySelector('.checkbox-image + label img');
-                if (this.checked) {
-                    image.src = 'sun.png';
-                    image.alt = 'Солнце';
-                } else {
-                    image.src = 'moon.png';
-                    image.alt = 'Луна';
-                }
-            });
-</script>
-        
-            
-<!----><!----><!----><!----><!----><!----><!----><!---->
-<div class="scroll-container">
-    <div class="scroll-content">
-    </div>
-  </div>
-<style>
-.scroll-container {
-position: relative;
-}
-
-.scroll-content {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-}
-
-.scroll-content.is-dragging {
-cursor: move;
-}
-
-.scroll-content.is-dragging {
-user-select: none;
-pointer-events: none;
-}
-</style>
-
-<script>
-const scrollContainer = document.querySelector('.scroll-container');
-const scrollContent = document.querySelector('.scroll-content');
-let isDragging = false;
-let startY = 0;
-let currentY = 0;
-
-scrollContent.addEventListener('mousedown', startDragging);
-scrollContent.addEventListener('touchstart', startDragging);
-
-scrollContainer.addEventListener('mousemove', drag);
-scrollContainer.addEventListener('touchmove', drag);
-
-scrollContent.addEventListener('mouseup', stopDragging);
-scrollContent.addEventListener('touchend', stopDragging);
-
-function startDragging(e) {
-isDragging = true;
-startY = e.clientY || e.touches[0].clientY;
-scrollContent.classList.add('is-dragging');
-}
-
-function drag(e) {
-if (isDragging) {
-e.preventDefault();
-currentY = e.clientY || e.touches[0].clientY;
-const diff = currentY - startY;
-scrollContent.style.transform = `translateY(${diff}px)`;
-}
-}
-
-function stopDragging() {
-isDragging = false;
-scrollContent.classList.remove('is-dragging');
-}
-
-</script>
-<!----><!----><!----><!----><!----><!----><!----><!---->
-
-<!--
-<label>
-<input type="checkbox" onchange="changeTheme(This.checked)">
-<img src="/moon.png" style="height: 40px; right: 40px;">
-</label>
-
-<script>
-function changeTheme (isChecked) {
-if (isChecked) {
-    document.body.setAttribute('dark', '');
-} else {
-    document.body.removeAttribute('dark');
-}
-}
-</script>
--->
-    
 </body>
 </html>
